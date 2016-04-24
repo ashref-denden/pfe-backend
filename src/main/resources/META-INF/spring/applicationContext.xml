@@ -6,6 +6,20 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
+	<import resource="classpath:/META-INF/spring/applicationContext-data.xml"/>
+	<context:annotation-config />
 	<context:component-scan base-package="com.ashref.denden.pfe.backend" />
-
+	
+	<bean class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:META-INF/config/jdbc.properties</value>
+			</list>
+		</property>
+		<property name="fileEncoding" value="UTF-8"/>
+		<property name="ignoreResourceNotFound" value="false"/>
+	</bean>
+	
+	<bean id="modelMapper" class="org.modelmapper.ModelMapper"/>
+	<bean id="productService" class="com.ashref.denden.pfe.backend.service.impl.ProductServiceImpl"/>
 </beans>
