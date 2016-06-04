@@ -45,5 +45,10 @@
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 		<property name="dataSource" ref="dataSource" />
 	</bean>
-
+	
+	<jdbc:initialize-database data-source="dataSource">
+		<jdbc:script location="classpath:META-INF//sql/init.sql"
+			encoding="UTF-8" />
+	</jdbc:initialize-database>
+	
 </beans>

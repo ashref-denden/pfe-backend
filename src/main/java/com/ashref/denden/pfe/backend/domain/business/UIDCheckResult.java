@@ -3,6 +3,7 @@ package com.ashref.denden.pfe.backend.domain.business;
 public class UIDCheckResult {
 	
 	private Boolean checkResult;
+	
 	private String message;
 	
 	public UIDCheckResult() {

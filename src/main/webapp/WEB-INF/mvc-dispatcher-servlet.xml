@@ -10,8 +10,11 @@
 	<mvc:annotation-driven />
 
 	<mvc:cors>
+		<mvc:mapping path="/user/login" allowed-methods="GET, POST" allowed-origins="http://localhost:8090" />
 		<mvc:mapping path="/**" allowed-methods="GET, POST" allowed-origins="http://localhost:8090" />
 		<mvc:mapping path="/product/add" allowed-methods="GET, POST" allowed-origins="http://localhost:8090" />
+		<mvc:mapping path="/product/**" allowed-methods="GET, POST" allowed-origins="http://localhost:8090" />
+		<mvc:mapping path="serial/**" allowed-methods="GET, POST" allowed-origins="http://localhost:8090" />
 	</mvc:cors>
 
 </beans>

@@ -56,6 +56,13 @@
 			<version>5.1.31</version>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- Postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4.1208.jre7</version>
+		</dependency>
+
 		<!-- Java Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>

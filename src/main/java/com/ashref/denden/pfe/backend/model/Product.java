@@ -15,7 +15,7 @@ public class Product {
 	
 	private String description;
 	
-	private String serialNumber;
+	private String manufacturer;
 	
 	public Product() {
 		// TODO Auto-generated constructor stub
@@ -44,15 +44,13 @@ public class Product {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	public String getSerialNumber() {
-		return serialNumber;
-	}
-
-	public void setSerialNumber(String serialNumber) {
-		this.serialNumber = serialNumber;
+	
+	public String getManufacturer() {
+		return manufacturer;
 	}
 	
-	
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
+	}
 	
 }

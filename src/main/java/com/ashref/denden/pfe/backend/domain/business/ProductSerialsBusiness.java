@@ -1,25 +1,18 @@
 package com.ashref.denden.pfe.backend.domain.business;
 
-public class ProductBusiness {
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductSerialsBusiness {
 	
-	private Long id;
-
 	private String name;
-
+	
 	private String description;
 	
-	private String manufacturer;
+	private List<SerialBusiness> serials = new ArrayList<SerialBusiness>();
 	
-	public ProductBusiness() {
+	public ProductSerialsBusiness() {
 		// TODO Auto-generated constructor stub
-	}
-	
-	public Long getId() {
-		return id;
-	}
-	
-	public void setId(Long id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -36,14 +29,14 @@ public class ProductBusiness {
 
 	public void setDescription(String description) {
 		this.description = description;
-	}	
-	
-	public String getManufacturer() {
-		return manufacturer;
 	}
-	
-	public void setManufacturer(String manufacturer) {
-		this.manufacturer = manufacturer;
+
+	public List<SerialBusiness> getSerials() {
+		return serials;
+	}
+
+	public void setSerials(List<SerialBusiness> serials) {
+		this.serials = serials;
 	}
 	
 }

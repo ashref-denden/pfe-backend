@@ -1,12 +1,16 @@
 package com.ashref.denden.pfe.backend.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
 import com.ashref.denden.pfe.backend.domain.business.ProductBusiness;
+import com.ashref.denden.pfe.backend.exceptions.GuardianException;
 
-@Service("productService")
 public interface ProductService {
 	
 	ProductBusiness addProduct(ProductBusiness productBusiness);
+
+	List<ProductBusiness> getManufacturerProduct(String manufacturerName) throws GuardianException;
+
+	List<ProductBusiness> deleteManufacturerProducts(String manufacturerName, List<Long> productsIds) throws GuardianException;
 
 }

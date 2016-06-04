@@ -21,5 +21,4 @@
 	</bean>
 	
 	<bean id="modelMapper" class="org.modelmapper.ModelMapper"/>
-	<bean id="productService" class="com.ashref.denden.pfe.backend.service.impl.ProductServiceImpl"/>
 </beans>
